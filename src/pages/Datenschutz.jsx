@@ -1,31 +1,20 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const Datenschutz = () => {
   return (
     <div className="relative min-h-screen pt-32 md:pt-40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-16"
-        >
+        <div className="text-center mb-10 md:mb-16">
           <h1 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent p-2">
             Datenschutzerklärung
           </h1>
-        </motion.div>
+        </div>
 
         <div className="grid gap-6 mb-8">
-          {/* İlk satır - 3 kart */}
+          {/* First row - 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Datenschutz */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Datenschutz
@@ -39,15 +28,10 @@ const Datenschutz = () => {
                   gesetzlichen Datenschutzvorschriften.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             {/* Verantwortliche Stelle */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Verantwortliche Stelle
@@ -66,15 +50,10 @@ const Datenschutz = () => {
                   E-Mail: info@turom-gmbh.de
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             {/* Cookies */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Cookies
@@ -89,25 +68,22 @@ const Datenschutz = () => {
                   unserer Cookie-Richtlinie.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* İkinci satır - Ihre Rechte */}
           <div className="grid grid-cols-1 gap-6">
             {/* Ihre Rechte */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Ihre Rechte
                 </h2>
               </div>
               <div className="p-6">
-                <p className="text-gray-600 mb-4 text-sm md:text-base">Sie haben das Recht:</p>
+                <p className="text-gray-600 mb-4 text-sm md:text-base">
+                  Sie haben das Recht:
+                </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2 text-sm md:text-base">
                   <li>
                     gemäß Art. 15 DSGVO Auskunft über Ihre bei uns verarbeiteten
@@ -139,16 +115,11 @@ const Datenschutz = () => {
                   </li>
                 </ul>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* İkinci satır - Datenerhebung full width */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Erhebung und Speicherung personenbezogener Daten
@@ -201,17 +172,12 @@ const Datenschutz = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Weitergabe von Daten und Widerspruchsrecht */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Weitergabe von Daten */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Weitergabe von Daten
@@ -241,15 +207,10 @@ const Datenschutz = () => {
                   </li>
                 </ul>
               </div>
-            </motion.div>
+            </div>
 
             {/* Widerspruchsrecht */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Widerspruchsrecht
@@ -263,18 +224,13 @@ const Datenschutz = () => {
                   ergeben, die gegen die Verarbeitung sprechen.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Sicherheitsmaßnahmen und Aktualität */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Sicherheitsmaßnahmen */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Sicherheitsmaßnahmen
@@ -288,15 +244,10 @@ const Datenschutz = () => {
                   zu schützen.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             {/* Aktualität und Änderungen */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
+            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
               <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
                 <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                   Aktualität und Änderungen
@@ -310,7 +261,7 @@ const Datenschutz = () => {
                   aktuelle Version finden Sie auf unserer Webseite.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

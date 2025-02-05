@@ -1,28 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const Impressum = () => {
   return (
     <div className="relative min-h-screen pt-32 md:pt-40 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-16"
-        >
+        <div className="text-center mb-10 md:mb-16">
           <h1 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
             Impressum
           </h1>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Herausgeber
@@ -37,14 +26,9 @@ const Impressum = () => {
               </p>
               <p className="text-gray-600 text-sm md:text-base">76709 Kronau</p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Geschäftsführer
@@ -58,14 +42,9 @@ const Impressum = () => {
                 Ion Alexandru Constantinescu
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Kontakt
@@ -82,16 +61,11 @@ const Impressum = () => {
                 E-Mail: info@turom-gmbh.de
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Registereintrag
@@ -111,14 +85,9 @@ const Impressum = () => {
                 USt-IdNr: DE293372404
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Technische Umsetzung
@@ -138,16 +107,11 @@ const Impressum = () => {
                 Web: www.b2b-monster.de
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="space-y-6 mb-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Haftungsausschluss
@@ -166,14 +130,9 @@ const Impressum = () => {
                 Betreiber verantwortlich.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Urheberrecht
@@ -189,14 +148,9 @@ const Impressum = () => {
                 Zustimmung des jeweiligen Autors bzw. Erstellers.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
+          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="bg-gradient-to-r from-[#24aae1] to-[#146fad] p-4 rounded-t-xl">
               <h2 className="text-white text-base md:text-lg font-normal md:font-medium">
                 Hinweis
@@ -211,7 +165,7 @@ const Impressum = () => {
                 Anforderungen oder Unternehmensinformationen zu aktualisieren
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

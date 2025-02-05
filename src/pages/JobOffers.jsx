@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import {
   FaEnvelope,
   FaCheckCircle,
@@ -51,69 +50,31 @@ const JobOffers = () => {
       {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Pattern */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.1 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0"
-        >
+        <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
           <div className="absolute inset-0 bg-grid-gray-100 opacity-20" />
-        </motion.div>
+        </div>
 
         {/* Floating Elements */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0 overflow-hidden"
-        >
+        <div className="absolute inset-0 overflow-hidden">
           {/* Decorative Circles */}
           <div className="absolute top-20 left-20 w-64 h-64 bg-[#24aae1]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
 
-          {/* Animated Icons */}
-          <motion.div
-            animate={{
-              y: [-10, 10, -10],
-              rotate: [0, 5, 0],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="absolute top-1/4 left-1/4 text-6xl text-[#24aae1]/20"
-          >
+          {/* Icons (static now) */}
+          <div className="absolute top-1/4 left-1/4 text-6xl text-[#24aae1]/20">
             <FaBriefcase />
-          </motion.div>
-          <motion.div
-            animate={{
-              y: [10, -10, 10],
-              rotate: [0, -5, 0],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 1,
-            }}
-            className="absolute bottom-1/4 right-1/4 text-6xl text-[#146fad]/20"
-          >
+          </div>
+          <div className="absolute bottom-1/4 right-1/4 text-6xl text-[#146fad]/20">
             <FaGraduationCap />
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Content */}
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 md:py-48">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-left"
-            >
+            <div className="text-left">
               <h1 className="text-2xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
                 Karriere bei der{" "}
                 <span className="block bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
@@ -141,25 +102,19 @@ const JobOffers = () => {
                   Jetzt bewerben
                 </a>
               </div>
-            </motion.div>
+            </div>
 
             {/* Right Column - Stats/Features */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="grid grid-cols-2 gap-4 md:gap-6"
-            >
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
               {[
                 { number: "10+", text: "Jahre Erfahrung" },
                 { number: "50+", text: "Mitarbeiter" },
                 { number: "2", text: "Offene Positionen" },
                 { number: "100%", text: "Engagement" },
               ].map((stat, index) => (
-                <motion.div
+                <div
                   key={index}
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl md:rounded-2xl shadow-lg border border-[#06234B]/10 text-center h-[120px] md:h-auto flex flex-col justify-center items-center"
+                  className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl md:rounded-2xl shadow-lg border border-[#06234B]/10 text-center h-[120px] md:h-auto flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300"
                 >
                   <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-1 md:mb-2">
                     {stat.number}
@@ -167,29 +122,19 @@ const JobOffers = () => {
                   <div className="text-sm md:text-base text-gray-600 md:font-medium">
                     {stat.text}
                   </div>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          animate={{
-            y: [0, 10, 0],
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-          className="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 md:flex flex-col items-center"
-        >
+        {/* Scroll Indicator (static now) */}
+        <div className="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 md:flex flex-col items-center">
           <div className="text-gray-400 mb-2 text-sm">Mehr entdecken</div>
           <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-            <motion.div className="w-1 h-2 bg-gray-400 rounded-full mt-2" />
+            <div className="w-1 h-2 bg-gray-400 rounded-full mt-2" />
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -199,30 +144,20 @@ const JobOffers = () => {
         {/* Job Listings Section */}
         <section className="py-0 md:py-24 bg-gradient-to-b from-gray-50/50 to-white">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center mb-10 md:mb-20"
-            >
-              <span className="text-[#24aae1] text-base sm:text-3xl md:text-4xl lg:text-5xl  font-medium">
+            <div className="text-center mb-10 md:mb-20">
+              <span className="text-[#24aae1] text-base sm:text-3xl md:text-4xl lg:text-5xl font-medium">
                 Karriere
               </span>
-              <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl  font-bold mt-2">
+              <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
                 Aktuelle Stellenangebote
               </h2>
               <div className="w-20 h-1 bg-[#24aae1] mx-auto mt-6"></div>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 gap-8">
               {jobPositions.map((job, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
                 >
                   {/* Job Header */}
@@ -290,18 +225,12 @@ const JobOffers = () => {
                       </div>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-            {/* Add this new section after the job listings */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="mt-8   bg-white rounded-2xl p-6 md:p-16 shadow-lg border border-gray-100 text-center"
-            >
+            {/* Application CTA section */}
+            <div className="mt-8 bg-white rounded-2xl p-6 md:p-16 shadow-lg border border-gray-100 text-center">
               <h3 className="text-base md:text-2xl font-base md:font-medium mb-6 bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
                 Haben wir Ihr Interesse geweckt? Dann Klingt das nach der
                 richtigen Herausforderung für Sie? <br /> Dann zögern Sie nicht
@@ -316,7 +245,7 @@ const JobOffers = () => {
                 <FaEnvelope className="mr-2" />
                 Jetzt bewerben
               </a>
-            </motion.div>
+            </div>
           </div>
         </section>
       </div>

@@ -1,40 +1,25 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+
 const TeamSection = () => {
   return (
     <div className="relative pt-8 md:pt-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* Background Elements */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.05 }}
-        transition={{ duration: 1 }}
-        className="absolute inset-0"
-      >
+      <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
         <div className="absolute inset-0 bg-grid-gray-100 opacity-20" />
-      </motion.div>
+      </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Team Section */}
-        <div className=" md:mb-20">
+        <div className="md:mb-20">
           {/* Section Title */}
           <div className="text-center mb-8 sm:mb-16">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl sm:text-3xl md:text-4xl lg:text-5xl  font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent"
-            >
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
               Ihre Ansprechpartner
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-4"
-            >
+            </h2>
+            <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-4">
               Unser erfahrenes Team steht Ihnen jederzeit zur Verfügung
-            </motion.p>
+            </p>
           </div>
 
           {/* Team Cards */}
@@ -61,14 +46,7 @@ const TeamSection = () => {
                 email: "aureliana.voda@turom-gmbh.de",
               },
             ].map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="group relative h-full"
-              >
+              <div key={index} className="group relative h-full">
                 {/* Card Container */}
                 <div className="relative bg-white/90 backdrop-blur-sm rounded-[1.5rem] sm:rounded-[2.5rem] shadow-[0_2px_10px_-3px_rgba(6,35,75,0.1)] transition-all duration-500 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] overflow-hidden h-full flex flex-col border border-gray-100">
                   {/* Top Gradient Bar */}
@@ -99,10 +77,9 @@ const TeamSection = () => {
 
                     {/* Contact Info */}
                     <div className="space-y-2 sm:space-y-3 mt-auto">
-                      <motion.a
+                      <a
                         href={`tel:${member.phone1}`}
                         className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white hover:bg-[#24aae1]/5 transition-all duration-300 shadow-[0_2px_8px_-3px_rgba(6,35,75,0.05)] hover:shadow-[0_4px_12px_-2px_rgba(6,35,75,0.08)]"
-                        whileHover={{ x: 5 }}
                       >
                         <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-[#24aae1]/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
                           <FaPhone className="text-[#24aae1] text-sm sm:text-lg" />
@@ -110,12 +87,11 @@ const TeamSection = () => {
                         <span className="text-xs sm:text-base text-gray-600 font-medium">
                           {member.phone1}
                         </span>
-                      </motion.a>
+                      </a>
                       {member.phone2 && (
-                        <motion.a
+                        <a
                           href={`tel:${member.phone2}`}
                           className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white hover:bg-[#24aae1]/5 transition-all duration-300 shadow-[0_2px_8px_-3px_rgba(6,35,75,0.05)] hover:shadow-[0_4px_12px_-2px_rgba(6,35,75,0.08)]"
-                          whileHover={{ x: 5 }}
                         >
                           <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-[#24aae1]/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
                             <FaPhone className="text-[#24aae1] text-sm sm:text-lg" />
@@ -123,12 +99,11 @@ const TeamSection = () => {
                           <span className="text-xs sm:text-base text-gray-600 font-medium">
                             {member.phone2}
                           </span>
-                        </motion.a>
+                        </a>
                       )}
-                      <motion.a
+                      <a
                         href={`mailto:${member.email}`}
                         className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white hover:bg-[#24aae1]/5 transition-all duration-300 shadow-[0_2px_8px_-3px_rgba(6,35,75,0.05)] hover:shadow-[0_4px_12px_-2px_rgba(6,35,75,0.08)]"
-                        whileHover={{ x: 5 }}
                       >
                         <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-[#24aae1]/10 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
                           <FaEnvelope className="text-[#24aae1] text-sm sm:text-lg" />
@@ -136,11 +111,11 @@ const TeamSection = () => {
                         <span className="text-xs sm:text-base text-gray-600 font-medium break-all">
                           {member.email}
                         </span>
-                      </motion.a>
+                      </a>
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaPhone, FaClock, FaMapMarkerAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -30,54 +29,22 @@ const Contact = () => {
       );
   };
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <div className="min-h-screen pt-20 md:pt-32 bg-gradient-to-b from-gray-50 to-white">
       <ToastContainer />
       <div className="px-4 pt-10 md:pt-16 md:py-12 mb-20 md:px-6 lg:px-8">
-        <motion.div
-          className="mx-auto container"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.div
-            className="text-center mb-10 md:mb-16"
-            variants={itemVariants}
-          >
+        <div className="mx-auto container">
+          <div className="text-center mb-10 md:mb-16">
             <h1 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-6">
               Kontaktieren Sie uns
             </h1>
-            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base ">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
               Wir freuen uns darauf, von Ihnen zu hören. Kontaktieren Sie uns
               gerne per E-Mail, Telefon oder über das Kontaktformular.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10 md:mb-16"
-            variants={containerVariants}
-          >
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10 md:mb-16">
             {[
               {
                 icon: (
@@ -121,11 +88,9 @@ const Contact = () => {
                 ),
               },
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.03 }}
-                className="bg-white p-4 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center"
+                className="bg-white p-4 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center hover:scale-[1.03]"
               >
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-50 rounded-full flex items-center justify-center mb-4">
                   {item.icon}
@@ -136,14 +101,11 @@ const Contact = () => {
                 <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                   {item.content}
                 </p>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white rounded-2xl shadow-xl overflow-hidden"
-          >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="h-[400px] lg:h-auto">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2606.5033269315513!2d8.625494!3d49.2099809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479797e0c8495a73%3A0x1db0f37c7d4543ed!2sTuRom%20GmbH!5e0!3m2!1sen!2str!4v1738247205727!5m2!1sen!2str"
@@ -164,52 +126,46 @@ const Contact = () => {
                 className="space-y-4 md:space-y-6"
               >
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <motion.input
-                    whileFocus={{ scale: 1.02 }}
+                  <input
                     type="text"
                     required
                     name="user_name"
                     placeholder="Ihr Name"
-                    className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300 hover:scale-[1.02]"
                   />
-                  <motion.input
-                    whileFocus={{ scale: 1.02 }}
+                  <input
                     type="email"
                     required
                     name="user_email"
                     placeholder="Ihre E-Mail-Adresse"
-                    className="w-full px-4 py-3 text-sm md:text-base  rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300 hover:scale-[1.02]"
                   />
                 </div>
-                <motion.input
-                  whileFocus={{ scale: 1.02 }}
+                <input
                   type="text"
                   required
                   name="user_telephone"
                   placeholder="Ihre Telefonnummer"
-                  className="w-full px-4 py-3 text-sm md:text-base  rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300"
+                  className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300 hover:scale-[1.02]"
                 />
-                <motion.textarea
-                  whileFocus={{ scale: 1.02 }}
+                <textarea
                   required
                   name="message"
                   placeholder="Ihre Nachricht..."
-                  className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300 min-h-[150px] resize-y"
+                  className="w-full px-4 py-3 text-sm md:text-base rounded-xl border border-gray-300 focus:border-[#24aae1] focus:ring-2 focus:ring-[#24aae1] focus:ring-opacity-50 outline-none transition-all duration-300 min-h-[150px] resize-y hover:scale-[1.02]"
                 />
                 <div className="flex justify-end">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                  <button
                     type="submit"
-                    className="px-4 md:px-8 py-3 md:py-4 bg-gradient-to-r text-sm md:text-base  from-[#24aae1] to-[#146fad] text-white rounded-xl md:font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="px-4 md:px-8 py-3 md:py-4 bg-gradient-to-r text-sm md:text-base from-[#24aae1] to-[#146fad] text-white rounded-xl md:font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95"
                   >
                     Nachricht senden
-                  </motion.button>
+                  </button>
                 </div>
               </form>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

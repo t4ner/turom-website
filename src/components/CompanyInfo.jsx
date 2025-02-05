@@ -1,29 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const CompanyInfo = () => {
   return (
     <div className="relative pv-10 md:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.05 }}
-        transition={{ duration: 1 }}
-        className="absolute inset-0"
-      >
+      <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
         <div className="absolute inset-0 bg-grid-gray-100 opacity-20" />
-      </motion.div>
+      </div>
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-stretch gap-10 md:gap-20">
           {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="w-full lg:w-1/2"
-          >
+          <div className="w-full lg:w-1/2">
             <div className="bg-white/80 backdrop-blur-lg p-6 md:p-12 rounded-3xl shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] transition-all duration-500 h-full flex flex-col justify-between">
               <div>
                 <h2 className="text-lg md:text-2xl font-semibold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-8">
@@ -49,16 +37,10 @@ const CompanyInfo = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="w-full lg:w-1/2"
-          >
+          <div className="w-full lg:w-1/2">
             <div className="h-full rounded-3xl overflow-hidden shadow-2xl relative">
               <img
                 src="/hero/bg1.webp"
@@ -68,7 +50,7 @@ const CompanyInfo = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
