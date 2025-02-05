@@ -149,13 +149,11 @@ const About = () => {
       </div>
 
       {/* Company Info Section */}
-     <CompanyInfo />
+      <CompanyInfo />
 
       {/* Company Story Section */}
-    
 
-        <TeamSection />
-      
+      <TeamSection />
     </>
   );
 };
