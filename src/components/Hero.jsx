@@ -1,20 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const slides = [
-  {
-    title: "Erfahrung",
-    subtitle: "Überzeugende Qualität durch langjährige Expertise",
-  },
-  {
-    title: "Zuverlässigkeit",
-    subtitle: "Termine und Budgets sind bei uns in sicheren Händen",
-  },
-  {
-    title: "Flexibilität",
-    subtitle: "Individuelle Lösungen für jeden Anspruch",
-  },
-];
+import { slides } from "../data.js";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,9 +26,10 @@ const Hero = () => {
       {/* Static Background */}
       <div className="absolute inset-0">
         <img
-          src="/hero/bg1.jpg"
+          src="/hero/bg1.webp"
           alt="Background"
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/10" />
       </div>

@@ -1,29 +1,9 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { cards } from "../data.js";
 
 const Information = () => {
   const containerRef = useRef(null);
-
-  const cards = [
-    {
-      number: "01",
-      title: "Innovation & Kompetenz",
-      content:
-        "Die TuRom GmbH steht für Kompetenz, Qualität und Innovation. Unser Erfolg basiert auf einer stetigen Weiterentwicklung unseres Leistungsspektrums – in einem Markt mit wachsender Bedeutung.",
-    },
-    {
-      number: "02",
-      title: "Effizienz",
-      content:
-        "Effizienz und Kundenzufriedenheit sind unser oberstes Gebot. Wir setzen auf perfekt organisierte Arbeitsabläufe und legen größten Wert auf Ihre Wünsche und Bedürfnisse.",
-    },
-    {
-      number: "03",
-      title: "Kontaktieren Sie uns",
-      content:
-        "Haben Sie Fragen oder benötigen weitere Informationen? Zögern Sie nicht – unser Team freut sich auf Ihre Kontaktaufnahme!",
-    },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -88,9 +68,7 @@ const Information = () => {
         >
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8 text-gray-900">
             Willkommen bei der <br />
-            <span className="">
-              TuRom GmbH
-            </span>
+            <span className="">TuRom GmbH</span>
           </h2>
           <motion.p
             className=" md:text-xl text-gray-600 font-light px-4 sm:px-0"

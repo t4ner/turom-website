@@ -1,49 +1,5 @@
 import React from "react";
-
-const serviceCategories = [
-  {
-    id: "01",
-    title: "Tief- & Kabelbau",
-    image: "/detailservices/detailservices1.webp",
-    details: [
-      "Herstellung stabiler Betonsteinpflaster für Bodenplatten",
-      "Aushubarbeiten für Keller, Fundamente und Leitungsgräben",
-      "Durchführung von Asphaltarbeiten und präzisen Trennschnitten",
-      "Ausschachtung und Verlegung von Strom-, Wasser- und Abwasserleitungen",
-      "Anbindung an das öffentliche Versorgungsnetz",
-      "Erdarbeiten für private, gewerbliche und öffentliche Bauprojekte",
-      "Fachgerechte Verfüllung und Verdichtung des Baugrunds",
-    ],
-  },
-  {
-    id: "02",
-    title: "Bau- & Sonderreinigungen",
-    image: "/detailservices/detailservices2.jpg",
-    details: [
-      "Grobreinigung von Baustellen: Entfernung von Bauschutt und Baustoffresten",
-      "Baufeinreinigung: Gründliche Säuberung aller Oberflächen, Böden, Wände und Fenster",
-      "Endreinigung: Herstellung eines bezugsfertigen Zustands für Gebäude",
-      "Fachgerechte Trennung und Entsorgung von Bau- und Renovierungsabfällen",
-      "Reinigung von Produktionshallen, Bürogebäuden und Parkhäusern",
-      "Entfernung hartnäckiger Verschmutzungen, Farben und Bauschmutz",
-      "Spezielle Sonderreinigungen für empfindliche Bereiche",
-    ],
-  },
-  {
-    id: "03",
-    title: "Pflaster- & Fliesenarbeiten",
-    image: "/detailservices/detailservices3.webp",
-    details: [
-      "Herstellung von Zementestrich mit Gefälle für Duschbereiche",
-      "Fachgerechte Wand- und Bodenverkleidung mit Fliesen, Platten und Mosaiken",
-      "Abdichtung und Schutzmaßnahmen gegen Feuchtigkeit",
-      "Präzise Verlegung von Edelstahl-Abschlussschienen",
-      "Gestaltung und Pflasterung von Einfahrten, Wegen und Hofanlagen",
-      "Errichtung von Terrassen, Treppen, Mauern und Sichtschutzanlagen",
-      "Fachgerechte Verlegung von Natur- und Betonsteinpflaster",
-    ],
-  },
-];
+import { serviceCategories } from "../data.js";
 
 const DetailedServices = () => {
   return (
@@ -75,6 +31,7 @@ const DetailedServices = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               </div>

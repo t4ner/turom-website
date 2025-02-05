@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import logo from "/logo/logo.png";
+import logo from "/logo/logo.webp";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,6 +43,7 @@ const Navbar = () => {
                 className={`h-12 md:h-20 transition-all duration-300 ${
                   isScrolled ? "brightness-100" : "brightness-[1000]"
                 }`}
+                loading="lazy"
                 style={{
                   filter: isScrolled
                     ? "none"

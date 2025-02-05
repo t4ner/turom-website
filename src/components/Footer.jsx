@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import Logo from "/logo/logo.png";
+import Logo from "/logo/logo.webp";
 import {
   FaPhone,
   FaEnvelope,
@@ -38,8 +38,6 @@ const ContactButton = memo(({ href, icon, text, target }) => (
 const Footer = () => {
   return (
     <footer className="relative mt-16 md:mt-5 bg-gradient-to-b from-white to-[#f8fbfe] border-t-2 border-[#24aae1]/30">
-      <div className="absolute inset-0 bg-[url('/grid.png')] opacity-5"></div>
-
       <div className="relative container px-4 mx-auto pt-10 md:pt-24 pb-6 md:pb-12">
         {/* Contact Buttons */}
         <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto mb-16 md:mb-24">
@@ -70,6 +68,7 @@ const Footer = () => {
               src={Logo}
               alt="macaree Logo"
               className="h-14 md:h-16 hover:opacity-80 transition-opacity duration-300"
+              loading="lazy"
             />
           </div>
 

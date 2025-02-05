@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaPhone,
   FaEnvelope,
   FaCheckCircle,
   FaBriefcase,
@@ -9,86 +8,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import JobInfo from "../components/JobInfo";
-
-const jobPositions = [
-  {
-    title: "Bauleiter/in Tiefbau (m/w/d)",
-
-    tasks: [
-      "Erstellen von Angeboten und Kostenschätzungen",
-      "Planung und Steuerung von Baustellen unter Berücksichtigung technischer, terminlicher und wirtschaftlicher Vorgaben",
-      "Koordination und Überwachung der Mitarbeiter vor Ort",
-      "Ansprechpartner/in für Behörden, Bauherren, Planungsbüros und Lieferanten",
-      "Durchführung von Bauablaufkontrollen und Teilnahme an Bau- und Koordinierungsbesprechungen",
-      "Erstellung von Aufmaßen, Abrechnungen und Baustellendokumentationen",
-    ],
-    profile: [
-      "Abgeschlossene Qualifikation als Techniker/in, Meister/in oder Bauingenieur/in",
-      "Mindestens 3 Jahre Berufserfahrung im Tief- und Kabelbau",
-      "Erste Erfahrungen in der Bauleitung oder Bauüberwachung",
-      "Selbstständige und lösungsorientierte Arbeitsweise mit einem unternehmerischen Denken",
-    ],
-    requirements: [
-      {
-        title:
-          "Abgeschlossene Ausbildung oder Studium in einem relevanten Bereich, z. B.:",
-        subItems: [
-          "Straßenbauermeister/in",
-          "Techniker/in – Bautechnik (Tiefbau)",
-          "Polier/in – Tiefbau",
-          "Bauingenieurwesen",
-        ],
-      },
-      "Fundierte Kenntnisse in Bauleitung und Bauplanung",
-      "Führerschein Klasse B (zwingend erforderlich)",
-      "Reise- und Montagebereitschaft",
-      "Erfahrung in der Leitung von Teams und Projekten",
-    ],
-  },
-  {
-    title: "Vorarbeiter/in Tiefbau (m/w/d)",
-
-    tasks: [
-      "Ausführung und Organisation von Arbeiten innerhalb einer Tiefbaukolonne",
-      "Anleitung und Führung kleiner Arbeitsgruppen",
-      "Sicherstellung der korrekten Verwendung von Baustoffen und Betriebsmitteln",
-      "Umsetzung von Bauplänen und Anweisungen vor Ort",
-      "Erstellung von Aufmaßen und Skizzen zur Projektdokumentation",
-    ],
-    profile: [
-      "Abgeschlossene Ausbildung als Tiefbaufacharbeiter/in oder langjährige Erfahrung im Tiefbau",
-      "Teamorientiertes Arbeiten und kundenorientiertes Handeln",
-      "Versierter Umgang mit Baumaschinen wie Radlader, Minibagger und Rüttelplatten",
-      "Selbstständige und wirtschaftlich geprägte Arbeitsweise",
-    ],
-    requirements: [
-      "Ausbildung als Tiefbaufacharbeiter/in oder Baugeräteführer/in",
-      "Fundierte Kenntnisse im Umgang mit Baumaschinen",
-      "Führerschein Klasse B (zwingend erforderlich)",
-      "Reisebereitschaft und Flexibilität",
-      "Führungserfahrung von Vorteil",
-    ],
-  },
-];
-
-const titleVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
+import { jobPositions } from "../data.js";
 
 const JobOffers = () => {
   const renderRequirements = (requirements) => {

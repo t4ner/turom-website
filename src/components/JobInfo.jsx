@@ -1,32 +1,8 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-
+import { cardsJob } from "../data.js";
 const JobInfo = () => {
   const containerRef = useRef(null);
-
-  const cards = [
-    {
-      number: "01",
-      title: "Sicherer Arbeitsplatz",
-      content:
-        "Ein zukunftsorientiertes Unternehmen mit langfristigen Perspektiven",
-    },
-    {
-      number: "02",
-      title: "Abwechslungsreiche Projekte",
-      content: "Spannende und herausfordernde Aufgaben im Tief- und Kabelbau",
-    },
-    {
-      number: "03",
-      title: "Individuelle Entwicklung",
-      content: "Wir unterstützen Ihre persönliche undberufliche Weiterbildung",
-    },
-    {
-      number: "04",
-      title: "Teamspirit",
-      content: "Kollegialität und Wertschätzung stehen bei uns im Fokus",
-    },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -105,7 +81,7 @@ const JobInfo = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 relative"
         >
-          {cards.map((card, index) => (
+          {cardsJob.map((card, index) => (
             <motion.div
               key={index}
               variants={cardVariants}

@@ -1,29 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-
-const services = [
-  {
-    number: "01",
-    title: "Tief- & Kabelbau",
-    description:
-      "Von der Fundamentlegung bis zur Verlegung von Strom-, Wasser- und Abwasseranschlüssen – wir schaffen die Basis für Ihr Bauprojekt. Dabei sind wir für Privatkunden, Versorgungsunternehmen sowie öffentliche Auftraggeber tätig.",
-    image: "/services/services1.jpeg",
-  },
-  {
-    number: "02",
-    title: "Bau- & Sonderreinigungen",
-    description:
-      "Ob Grobreinigung, Feinreinigung oder Spezialreinigungen: Wir sorgen für Sauberkeit – während und nach Ihrer Bauphase. Unser Team entfernt Bauschutt, reinigt Oberflächen und schafft bezugsfertige Räumlichkeiten.",
-    image: "/services/services2.jpg",
-  },
-  {
-    number: "03",
-    title: "Pflaster- & Fliesenarbeiten",
-    description:
-      "Egal ob Alt- oder Neubau – wir gestalten Wände und Böden in Bädern, Küchen, Terrassen und mehr. Von der Untergrundprüfung über die Verlegung bis hin zu Nachbesserungen übernehmen wir alle Schritte für ein perfektes Ergebnis.",
-    image: "/services/services3.jpg",
-  },
-];
+import { services } from "../data.js";
 
 const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -85,6 +62,7 @@ const Services = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="text-4xl font-bold text-white opacity-90 shadow-text">
@@ -118,6 +96,7 @@ const Services = () => {
                   ref={(el) => (imagesRef.current[index] = el)}
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-black/50"></div>
