@@ -26,10 +26,7 @@ const JobOffers = () => {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
 
           {/* Icons */}
-          <div className="absolute top-[20%] left-[10%] md:top-1/4 md:left-1/4 flex items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20 pointer-events-none">
-            <FaGraduationCap />
-          </div>
-          <div className="absolute bottom-[20%] right-[10%] md:bottom-1/4 md:right-1/4 flex items-center justify-center text-5xl md:text-6xl text-[#146fad]/20 pointer-events-none">
+          <div className="hidden md:flex absolute top-[20%] left-[10%] md:top-1/4 md:left-1/4 items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20 pointer-events-none">
             <FaGraduationCap />
           </div>
         </div>

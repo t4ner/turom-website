@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhone, FaUsers, FaHandshake } from "react-icons/fa";
+import { FaPhone, FaHandshake } from "react-icons/fa";
 import TeamSection from "../components/TeamSection";
 import CompanyInfo from "../components/CompanyInfo";
 
@@ -21,11 +21,8 @@ const About = () => {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
 
           {/* Decorative Icons */}
-          <div className="absolute top-[8%] right-[8%] md:top-1/4 md:left-1/4 md:right-auto flex items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20">
+          <div className="hidden md:flex absolute top-[8%] right-[8%] md:top-1/4 md:left-1/4 md:right-auto items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20">
             <FaHandshake />
-          </div>
-          <div className="absolute bottom-[15%] left-[8%] md:bottom-1/4 md:right-1/4 md:left-auto flex items-center justify-center text-5xl md:text-6xl text-[#146fad]/20">
-            <FaUsers />
           </div>
         </div>
 
