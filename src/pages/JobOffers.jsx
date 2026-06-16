@@ -12,7 +12,7 @@ const JobOffers = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center overflow-hidden py-12 sm:py-0">
+      <div className="relative min-h-screen flex items-start md:items-center justify-center overflow-hidden pt-28 pb-12 md:py-0">
         {/* Background Pattern */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
@@ -32,7 +32,7 @@ const JobOffers = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:py-24 lg:py-32">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="text-left">
