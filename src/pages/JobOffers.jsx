@@ -12,7 +12,7 @@ const JobOffers = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden py-12 sm:py-0">
         {/* Background Pattern */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
@@ -20,7 +20,7 @@ const JobOffers = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
           {/* Decorative Circles */}
           <div className="absolute top-20 left-20 w-64 h-64 bg-[#24aae1]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
@@ -32,17 +32,17 @@ const JobOffers = () => {
         </div>
 
         {/* Content */}
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 md:py-48">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="text-left">
-              <h1 className="text-2xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+              <h1 className="text-2xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 leading-tight">
                 Karriere bei{" "}
                 <span className="block bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
                   TuRom
                 </span>
               </h1>
-              <p className="text-sm md:text-base text-gray-600 mb-8">
+              <p className="text-sm md:text-base text-gray-600 mb-6 sm:mb-8">
                 Sie suchen spannende Herausforderungen, innovative Projekte und
                 eine sichere Perspektive? Bei TuRom haben Sie die Möglichkeit,
                 die Infrastruktur von morgen aktiv mitzugestalten. Werden Sie
@@ -60,7 +60,7 @@ const JobOffers = () => {
             </div>
 
             {/* Right Column - Stats/Features */}
-            <div className="grid grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {[
                 { number: "10+", text: "Jahre Erfahrung" },
                 { number: "50+", text: "Mitarbeiter" },
@@ -69,12 +69,12 @@ const JobOffers = () => {
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="bg-white/80 backdrop-blur-sm p-4 md:p-6 rounded-xl md:rounded-2xl shadow-lg border border-[#06234B]/10 text-center h-[120px] md:h-auto flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300"
+                  className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-[#06234B]/10 text-center flex flex-col justify-center items-center min-h-[100px] sm:min-h-[120px] hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-1 md:mb-2">
+                  <div className="text-xl sm:text-2xl lg:text-4xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-1 sm:mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-xs sm:text-sm md:text-base text-gray-600 md:font-medium leading-snug px-1">
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-600 font-medium leading-snug px-1">
                     {stat.text}
                   </div>
                 </div>
@@ -83,8 +83,8 @@ const JobOffers = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator (static now) */}
-        <div className="hidden absolute bottom-8 left-1/2 transform -translate-x-1/2 md:flex flex-col items-center">
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
           <div className="text-gray-400 mb-2 text-sm">Mehr entdecken</div>
           <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
             <div className="w-1 h-2 bg-gray-400 rounded-full mt-2" />
