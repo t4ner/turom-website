@@ -1,16 +1,16 @@
 const serviceCategories = [
   {
     id: "01",
-    title: "Tief- & Kabelbau",
-    image: "/detailservices/detailservices1.webp",
+    title: "Pflaster- & Fliesenarbeiten",
+    image: "/detailservices/detailservices3.webp",
     details: [
-      "Herstellung stabiler Betonsteinpflaster für Bodenplatten",
-      "Aushubarbeiten für Keller, Fundamente und Leitungsgräben",
-      "Durchführung von Asphaltarbeiten und präzisen Trennschnitten",
-      "Ausschachtung und Verlegung von Strom-, Wasser- und Abwasserleitungen",
-      "Anbindung an das öffentliche Versorgungsnetz",
-      "Erdarbeiten für private, gewerbliche und öffentliche Bauprojekte",
-      "Fachgerechte Verfüllung und Verdichtung des Baugrunds",
+      "Herstellung von Zementestrich mit Gefälle für Duschbereiche.",
+      "Fachgerechte Wand- und Bodenverkleidung mit Fliesen, Platten und Mosaiken.",
+      "Abdichtung und Schutzmaßnahmen gegen Feuchtigkeit.",
+      "Präzise Verlegung von Edelstahl-Abschlussschienen.",
+      "Gestaltung und Pflasterung von Einfahrten, Wegen und Hofanlagen.",
+      "Errichtung von Terrassen, Treppen, Mauern und Sichtschutzanlagen.",
+      "Fachgerechte Verlegung von Natur- und Betonsteinpflaster.",
     ],
   },
   {
@@ -18,27 +18,27 @@ const serviceCategories = [
     title: "Bau- & Sonderreinigungen",
     image: "/detailservices/detailservices2.webp",
     details: [
-      "Grobreinigung von Baustellen: Entfernung von Bauschutt und Baustoffresten",
-      "Baufeinreinigung: Gründliche Säuberung aller Oberflächen, Böden, Wände und Fenster",
-      "Endreinigung: Herstellung eines bezugsfertigen Zustands für Gebäude",
-      "Fachgerechte Trennung und Entsorgung von Bau- und Renovierungsabfällen",
-      "Reinigung von Produktionshallen, Bürogebäuden und Parkhäusern",
-      "Entfernung hartnäckiger Verschmutzungen, Farben und Bauschmutz",
-      "Spezielle Sonderreinigungen für empfindliche Bereiche",
+      "Grobreinigung von Baustellen: Entfernung von Bauschutt und Baustoffresten.",
+      "Baufeinreinigung: Gründliche Säuberung aller Oberflächen, Böden, Wände und Fenster.",
+      "Endreinigung: Herstellung eines bezugsfertigen Zustands für Gebäude.",
+      "Fachgerechte Trennung und Entsorgung von Bau- und Renovierungsabfällen.",
+      "Reinigung von Produktionshallen, Bürogebäuden und Parkhäusern.",
+      "Entfernung hartnäckiger Verschmutzungen, Farben und Bauschmutz.",
+      "Spezielle Sonderreinigungen für empfindliche Bereiche.",
     ],
   },
   {
     id: "03",
-    title: "Pflaster- & Fliesenarbeiten",
-    image: "/detailservices/detailservices3.webp",
+    title: "Tief- & Kabelbau",
+    image: "/detailservices/detailservices1.webp",
     details: [
-      "Herstellung von Zementestrich mit Gefälle für Duschbereiche",
-      "Fachgerechte Wand- und Bodenverkleidung mit Fliesen, Platten und Mosaiken",
-      "Abdichtung und Schutzmaßnahmen gegen Feuchtigkeit",
-      "Präzise Verlegung von Edelstahl-Abschlussschienen",
-      "Gestaltung und Pflasterung von Einfahrten, Wegen und Hofanlagen",
-      "Errichtung von Terrassen, Treppen, Mauern und Sichtschutzanlagen",
-      "Fachgerechte Verlegung von Natur- und Betonsteinpflaster",
+      "Herstellung stabiler Betonsteinpflaster für Bodenplatten.",
+      "Aushubarbeiten für Keller, Fundamente und Leitungsgräben.",
+      "Durchführung von Asphaltarbeiten und präzisen Trennschnitten.",
+      "Ausschachtung und Verlegung von Strom-, Wasser- und Abwasserleitungen.",
+      "Anbindung an das öffentliche Versorgungsnetz.",
+      "Erdarbeiten für private, gewerbliche und öffentliche Bauprojekte.",
+      "Fachgerechte Verfüllung und Verdichtung des Baugrunds.",
     ],
   },
 ];
@@ -54,7 +54,7 @@ const slides = [
   },
   {
     title: "Flexibilität",
-    subtitle: "Individuelle Lösungen für jeden Anspruch",
+    subtitle: "Individuelle Lösungen, bei 100 % Normenkonformität",
   },
 ];
 
@@ -106,24 +106,24 @@ const cardsJob = [
 const services = [
   {
     number: "01",
-    title: "Tief- & Kabelbau",
+    title: "Pflaster- & Fliesenarbeiten",
     description:
-      "Von der Fundamentlegung bis zur Verlegung von Strom-, Wasser- und Abwasseranschlüssen – wir schaffen die Basis für Ihr Bauprojekt. Dabei sind wir für Privatkunden, Versorgungsunternehmen sowie öffentliche Auftraggeber tätig.",
-    image: "/services/services1.webp",
+      "Ob Renovierungen in Bestandsbauten oder Erstverlegung in Neubauten – wir gestalten Wände und Böden auf gewerblichen und privaten Baustellen – im Innen und Außenbereich. Dabei gehören die fachgerechte Untergrundvorbereitung, die Isolierung von Nassbereichen, das Einmauern von Duschtassen und Badewannen, sowie die Verkofferung von Leitungen ebenso zu unseren Leistungen. Bei ausreichendem Planungsvorlauf haben wir auch für die Ausführung von Großflächen genügend Kapazität.",
+    image: "/services/services3.webp",
   },
   {
     number: "02",
     title: "Bau- & Sonderreinigungen",
     description:
-      "Ob Grobreinigung, Feinreinigung oder Spezialreinigungen: Wir sorgen für Sauberkeit – während und nach Ihrer Bauphase. Unser Team entfernt Bauschutt, reinigt Oberflächen und schafft bezugsfertige Räumlichkeiten.",
+      "Ob Grob- oder Feinreinigung: Wir sorgen für Sauberkeit – während und nach Ihrer Bauphase. Unser Team trennt Materialien, entfernt Bauschutt, reinigt Oberflächen und schafft bezugsfertige Räumlichkeiten. Bei Grund-, Unterhalts- und Glasreinigungen können Sie ebenso auf uns zählen. Unsere langjährige Erfahrung in Industrie und öffentlichen Einrichtungen wie Kindergärten, Schulen und Gemeindehäusern, macht uns zum kompetenten Ansprechpartner rund um das Thema Reinigung.",
     image: "/services/services2.webp",
   },
   {
     number: "03",
-    title: "Pflaster- & Fliesenarbeiten",
+    title: "Tief- & Kabelbau",
     description:
-      "Egal ob Alt- oder Neubau – wir gestalten Wände und Böden in Bädern, Küchen, Terrassen und mehr. Von der Untergrundprüfung über die Verlegung bis hin zu Nachbesserungen übernehmen wir alle Schritte für ein perfektes Ergebnis.",
-    image: "/services/services3.webp",
+      "Von der Trassenplanung, dem Ausschachten und die fachgerechte Verlegung, über die Wiederherstellung der Oberflächen (Pflaster oder Asphalt), das Einmessen der Leitungen und die Dokumentierung bis hin zum Anschluss an das öffentliche Versorgungsnetz. Als Generalunternehmer bieten wir im Bereich Strom- und Breitband alle Leistungen aus einer Hand. Dabei arbeiten wir für Versorgungsunternehmen und öffentliche Auftraggeber.",
+    image: "/services/services1.webp",
   },
 ];
 
@@ -132,31 +132,18 @@ const jobPositions = [
     title: "Bauleiter/in Tiefbau (m/w/d)",
 
     tasks: [
-      "Erstellen von Angeboten und Kostenschätzungen",
-      "Planung und Steuerung von Baustellen unter Berücksichtigung technischer, terminlicher und wirtschaftlicher Vorgaben",
-      "Koordination und Überwachung der Mitarbeiter vor Ort",
-      "Ansprechpartner/in für Behörden, Bauherren, Planungsbüros und Lieferanten",
-      "Durchführung von Bauablaufkontrollen und Teilnahme an Bau- und Koordinierungsbesprechungen",
-      "Erstellung von Aufmaßen, Abrechnungen und Baustellendokumentationen",
+      "Erstellen von Angeboten und Kostenschätzungen.",
+      "Planung und Steuerung von Baustellen unter Berücksichtigung technischer, terminlicher und wirtschaftlicher Vorgaben.",
+      "Koordination und Überwachung der Mitarbeiter vor Ort.",
+      "Ansprechpartner/in für Behörden, Bauherren, Planungsbüros und Lieferanten.",
+      "Durchführung von Bauablaufkontrollen und Teilnahme an Bau- und Koordinierungsbesprechungen.",
+      "Erstellung von Aufmaßen, Abrechnungen und Baustellendokumentationen.",
     ],
     profile: [
       "Abgeschlossene Qualifikation als Techniker/in, Meister/in oder Bauingenieur/in",
-      "Mindestens 3 Jahre Berufserfahrung im Tief- und Kabelbau",
+      "Mindestens 3 Jahre Berufserfahrung im Tief- und/oder Kabelbau.",
       "Erste Erfahrungen in der Bauleitung oder Bauüberwachung",
       "Selbstständige und lösungsorientierte Arbeitsweise mit einem unternehmerischen Denken",
-    ],
-    requirements: [
-      {
-        title:
-          "Abgeschlossene Ausbildung oder Studium in einem relevanten Bereich, z. B.:",
-        subItems: [
-          "Straßenbauermeister/in",
-          "Techniker/in – Bautechnik (Tiefbau)",
-          "Polier/in – Tiefbau",
-          "Bauingenieurwesen",
-        ],
-      },
-      "Fundierte Kenntnisse in Bauleitung und Bauplanung",
       "Führerschein Klasse B (zwingend erforderlich)",
       "Reise- und Montagebereitschaft",
       "Erfahrung in der Leitung von Teams und Projekten",
@@ -166,23 +153,20 @@ const jobPositions = [
     title: "Vorarbeiter/in Tiefbau (m/w/d)",
 
     tasks: [
-      "Ausführung und Organisation von Arbeiten innerhalb einer Tiefbaukolonne",
-      "Anleitung und Führung kleiner Arbeitsgruppen",
-      "Sicherstellung der korrekten Verwendung von Baustoffen und Betriebsmitteln",
-      "Umsetzung von Bauplänen und Anweisungen vor Ort",
-      "Erstellung von Aufmaßen und Skizzen zur Projektdokumentation",
+      "Ausführung und Organisation von Arbeiten innerhalb einer Tiefbaukolonne.",
+      "Anleitung und Führung kleiner Arbeitsgruppen.",
+      "Sicherstellung der korrekten Verwendung von Baustoffen und Betriebsmitteln.",
+      "Umsetzung von Bauplänen und Anweisungen vor Ort.",
+      "Erstellung von Aufmaßen und Skizzen zur Projektdokumentation.",
     ],
     profile: [
       "Abgeschlossene Ausbildung als Tiefbaufacharbeiter/in oder langjährige Erfahrung im Tiefbau",
       "Teamorientiertes Arbeiten und kundenorientiertes Handeln",
       "Versierter Umgang mit Baumaschinen wie Radlader, Minibagger und Rüttelplatten",
       "Selbstständige und wirtschaftlich geprägte Arbeitsweise",
-    ],
-    requirements: [
-      "Ausbildung als Tiefbaufacharbeiter/in oder Baugeräteführer/in",
-      "Fundierte Kenntnisse im Umgang mit Baumaschinen",
-      "Führerschein Klasse B (zwingend erforderlich)",
+      "Ausbildung als Baumaschinenführer",
       "Reisebereitschaft und Flexibilität",
+      "Führerschein Klasse B (zwingend erforderlich)",
       "Führungserfahrung von Vorteil",
     ],
   },

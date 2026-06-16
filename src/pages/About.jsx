@@ -15,22 +15,22 @@ const About = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
           {/* Decorative Circles */}
           <div className="absolute top-20 left-20 w-64 h-64 bg-[#24aae1]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
 
-          {/* Animated Icons */}
-          <div className="absolute top-1/4 left-1/4 text-6xl text-[#24aae1]/20">
+          {/* Decorative Icons */}
+          <div className="absolute top-[8%] right-[8%] md:top-1/4 md:left-1/4 md:right-auto flex items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20">
             <FaHandshake />
           </div>
-          <div className="absolute bottom-1/4 right-1/4 text-6xl text-[#146fad]/20">
+          <div className="absolute bottom-[15%] left-[8%] md:bottom-1/4 md:right-1/4 md:left-auto flex items-center justify-center text-5xl md:text-6xl text-[#146fad]/20">
             <FaUsers />
           </div>
         </div>
 
         {/* Content */}
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="text-left">

@@ -16,6 +16,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${
@@ -28,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="relative">
-            <Link to="/">
+            <Link to="/" onClick={handleLogoClick}>
               <img
                 src={logo}
                 alt="logo"
@@ -105,16 +111,12 @@ const Navbar = () => {
           {/* Contact Button */}
           <Link to="/kontakt">
             <button
-              className={`hidden md:flex items-center gap-2 px-8 py-2.5 cursor-pointer ${
-                isScrolled
-                  ? "bg-black text-white hover:bg-black/90"
-                  : "bg-white text-black hover:bg-white/90"
-              } transition-all duration-300`}
+              className="flex items-center gap-2 px-5 py-2.5 md:px-10 md:py-3.5 cursor-pointer bg-[#1D3A90] text-white hover:bg-[#146fad] transition-all duration-300 rounded-sm shadow-md"
             >
-              <span className="text-sm tracking-wider font-medium">
+              <span className="text-sm md:text-base tracking-wider font-semibold">
                 Kontakt
               </span>
-              <span>→</span>
+              <span className="hidden sm:inline">→</span>
             </button>
           </Link>
 
@@ -200,12 +202,6 @@ const Navbar = () => {
                   Über uns
                 </Link>
               </div>
-
-              <Link to="/kontakt" onClick={() => setIsOpen(false)}>
-                <button className="max-w-xs mx-auto px-10 py-4 bg-black text-white text-xl font-medium transition-all duration-300 hover:bg-black/90 cursor-pointer">
-                  Kontakt
-                </button>
-              </Link>
             </div>
           </div>
         </div>

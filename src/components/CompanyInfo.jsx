@@ -20,14 +20,14 @@ const CompanyInfo = () => {
                 <p className="text-sm md:text-base text-black/70 mb-8 leading-relaxed">
                   Mit einem erweiterten Team und gebündeltem Know-how sind wir
                   heute Ihr zuverlässiger Partner für maßgeschneiderte Lösungen
-                  im Bau- und Industrieservice
+                  im Bau- und Industrieservice.
                 </p>
                 <p className="text-sm md:text-base text-black/70 mb-8 leading-relaxed">
                   Unser Versprechen: Qualität und Transparenz Ganz gleich, für
                   welche unserer Leistungen Sie sich entscheiden – bei uns
                   können Sie jederzeit auf eine qualitätsorientierte
                   Arbeitsweise und ein faires Preis-Leistungs-Verhältnis
-                  vertrauen
+                  vertrauen.
                 </p>
                 <p className="text-sm md:text-base text-black/70 leading-relaxed">
                   Wir setzen auf Professionalität, Zuverlässigkeit und

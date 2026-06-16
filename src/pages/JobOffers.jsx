@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaEnvelope,
-  FaCheckCircle,
   FaBriefcase,
   FaGraduationCap,
   FaUsers,
@@ -10,41 +9,6 @@ import JobInfo from "../components/JobInfo";
 import { jobPositions } from "../data.js";
 
 const JobOffers = () => {
-  const renderRequirements = (requirements) => {
-    return requirements.map((req, idx) => {
-      if (typeof req === "object") {
-        return (
-          <div key={idx} className="space-y-2">
-            <div className="flex items-start gap-2 text-sm md:text-base text-gray-600">
-              <FaCheckCircle className="mt-1 text-[#24aae1] flex-shrink-0" />
-              <span>{req.title}</span>
-            </div>
-            <ul className="ml-6 space-y-1">
-              {req.subItems.map((item, subIdx) => (
-                <li
-                  key={subIdx}
-                  className="flex items-start gap-2 text-sm md:text-base text-gray-600"
-                >
-                  <span className="text-[#24aae1]">○</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        );
-      }
-      return (
-        <li
-          key={idx}
-          className="flex items-start gap-2 text-sm md:text-base text-gray-600"
-        >
-          <FaCheckCircle className="mt-1 text-[#24aae1] flex-shrink-0" />
-          <span>{req}</span>
-        </li>
-      );
-    });
-  };
-
   return (
     <>
       {/* Hero Section */}
@@ -61,11 +25,11 @@ const JobOffers = () => {
           <div className="absolute top-20 left-20 w-64 h-64 bg-[#24aae1]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#146fad]/10 rounded-full blur-3xl" />
 
-          {/* Icons (static now) */}
-          <div className="absolute top-1/4 left-1/4 text-6xl text-[#24aae1]/20">
-            <FaBriefcase />
+          {/* Icons */}
+          <div className="absolute top-[20%] left-[10%] md:top-1/4 md:left-1/4 flex items-center justify-center text-5xl md:text-6xl text-[#24aae1]/20 pointer-events-none">
+            <FaGraduationCap />
           </div>
-          <div className="absolute bottom-1/4 right-1/4 text-6xl text-[#146fad]/20">
+          <div className="absolute bottom-[20%] right-[10%] md:bottom-1/4 md:right-1/4 flex items-center justify-center text-5xl md:text-6xl text-[#146fad]/20 pointer-events-none">
             <FaGraduationCap />
           </div>
         </div>
@@ -76,22 +40,16 @@ const JobOffers = () => {
             {/* Left Column - Text Content */}
             <div className="text-left">
               <h1 className="text-2xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
-                Karriere bei der{" "}
+                Karriere bei{" "}
                 <span className="block bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
-                  TuRom GmbH
+                  TuRom
                 </span>
               </h1>
               <p className="text-sm md:text-base text-gray-600 mb-8">
-                Ihre Chance auf eine sichere Zukunft!
-              </p>
-              <p className="text-sm md:text-base  text-gray-600 mb-8">
                 Sie suchen spannende Herausforderungen, innovative Projekte und
-                eine sichere Perspektive? Bei der TuRom GmbH haben Sie die
-                Möglichkeit, die Infrastruktur von morgen aktiv mitzugestalten.
-                Werden Sie Teil unseres Teams und bringen Sie Ihr Know-how ein!
-              </p>
-              <p className="text-sm md:text-base text-gray-600 mb-8">
-                Gemeinsam Großes bewegen!
+                eine sichere Perspektive? Bei TuRom haben Sie die Möglichkeit,
+                die Infrastruktur von morgen aktiv mitzugestalten. Werden Sie
+                Teil unseres Teams und bringen Sie Ihr Know-how ein!
               </p>
               <div className=" flex flex-col sm:flex-row gap-4">
                 <a
@@ -109,7 +67,7 @@ const JobOffers = () => {
               {[
                 { number: "10+", text: "Jahre Erfahrung" },
                 { number: "50+", text: "Mitarbeiter" },
-                { number: "2", text: "Offene Positionen" },
+                { number: "2", text: "Offene\u00a0Positionen" },
                 { number: "100%", text: "Engagement" },
               ].map((stat, index) => (
                 <div
@@ -119,7 +77,7 @@ const JobOffers = () => {
                   <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent mb-1 md:mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-sm md:text-base text-gray-600 md:font-medium">
+                  <div className="text-xs sm:text-sm md:text-base text-gray-600 md:font-medium leading-snug px-1">
                     {stat.text}
                   </div>
                 </div>
@@ -185,12 +143,6 @@ const JobOffers = () => {
                         icon: <FaUsers />,
                         items: job.profile,
                         bgColor: "from-[#146fad]/5 to-[#146fad]/10",
-                      },
-                      {
-                        title: "Anforderungen",
-                        icon: <FaGraduationCap />,
-                        items: job.requirements,
-                        bgColor: "from-[#24aae1]/5 to-[#24aae1]/10",
                       },
                     ].map((section, idx) => (
                       <div

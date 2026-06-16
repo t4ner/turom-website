@@ -3,7 +3,7 @@ import { cards } from "../data.js";
 
 const Information = () => {
   return (
-    <div className="relative pb-10 md:pb-28 overflow-hidden">
+    <div className="relative pt-10 sm:pt-12 md:pt-16 pb-10 md:pb-28 overflow-x-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(36,170,225,0.1),transparent)]" />
@@ -11,19 +11,9 @@ const Information = () => {
       </div>
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-24">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8 text-gray-900">
-            Willkommen bei der <br />
-            <span className="">TuRom GmbH</span>
-          </h2>
-          <p className="md:text-xl text-gray-600 font-light px-4 sm:px-0">
-            Ihr Experte für Bau- & Industrieservice
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 relative px-4 sm:px-0">
           {cards.map((card, index) => (
-            <div key={index} className="group relative">
+            <div key={index} className="group relative pt-6 sm:pt-8">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#24aae1] to-[#146fad] rounded-[20px] opacity-0 group-hover:opacity-20" />
 
               <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-[18px] p-6 sm:p-8 lg:p-10 shadow-lg border border-gray-100/50">

@@ -45,7 +45,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-2xl md:text-5xl font-bold text-center mb-12 md:mb-20 relative">
           <span className="bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
-            Unsere Leistungen im Überblick
+            Ihr Experte für Bau- & Industrieservice
           </span>
           <div className="absolute -bottom-4 md:-bottom-6 left-1/2 transform -translate-x-1/2 w-24 md:w-32 h-2 bg-gradient-to-r from-[#24aae1] to-[#146fad] rounded-full" />
         </h1>

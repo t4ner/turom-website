@@ -15,7 +15,7 @@ const JobInfo = () => {
           <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-900">
             Ihre Vorteile bei <br />
             <span className="bg-gradient-to-r from-[#24aae1] to-[#146fad] bg-clip-text text-transparent">
-              TuRom GmbH
+              TuRom
             </span>
           </h2>
         </div>
