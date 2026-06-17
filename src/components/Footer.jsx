@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
   FaArrowRight,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const FooterLink = memo(({ to, children }) => (
   <Link
@@ -36,6 +36,14 @@ const ContactButton = memo(({ href, icon, text, target }) => (
 ));
 
 const Footer = () => {
+  const location = useLocation();
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="relative mt-16 md:mt-5 bg-gradient-to-b from-white to-[#f8fbfe] border-t-2 border-[#24aae1]/30">
       <div className="relative container px-4 mx-auto pt-10 md:pt-24 pb-6 md:pb-12">
@@ -64,12 +72,14 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between  items-center pt-8 md:pt-12 border-t border-[#06234B]/10">
           <div className="mb-6 md:mb-8">
-            <img
-              src={Logo}
-              alt="macaree Logo"
-              className="h-14 md:h-16 hover:opacity-80 transition-opacity duration-300"
-              loading="lazy"
-            />
+            <Link to="/" onClick={handleLogoClick}>
+              <img
+                src={Logo}
+                alt="TuRom Logo"
+                className="h-14 md:h-16 hover:opacity-80 transition-opacity duration-300"
+                loading="lazy"
+              />
+            </Link>
           </div>
 
           <div className="flex flex-col mt-5 md:mt-0 text-[#06234B]/60 text-sm md:text-base sm:flex-row items-center gap-4 sm:gap-8 md:gap-12 mb-6 md:mb-8">
